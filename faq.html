@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frequently Asked Questions</title>
+</head>
+<body>
+    <h1 class="header"> Frequently Asked Questions</h1>
+    <br>
+ figure a tagline to put under the header. 
+
+
+    <span> Can your roof support a solar panel system?</span>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aut natus itaque quam odio impedit facilis saepe non corrupti qui similique doloribus fuga, voluptatibus hic adipisci quaerat ipsam suscipit maiores mollitia?</p>
+
+    <span> Do you need a license for solar panel installation?</span>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque quis nam, ut neque iure odio ipsum incidunt tempore voluptates consequatur aliquid similique voluptate placeat culpa, explicabo ad cupiditate atque qui.</p>
+
+    <span>Do you need a solar backup?</span>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sed tempore temporibus molestiae recusandae accusantium consectetur ullam accusamus maiores commodi magni debitis asperiores deserunt nemo, iusto exercitationem omnis saepe assumenda quasi.</p>
+
+    <span>How long will the solar panel last?</span>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Libero eveniet voluptatem modi laboriosam sint, itaque quam exercitationem doloremque autem cupiditate soluta harum velit quas nam animi quae neque sit ad!</p>
+    
+    <span> What is the warranty?</span>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id voluptatum quas quam sit, eos eligendi temporibus maiores facere accusamus officia et suscipit adipisci quibusdam hic cum neque debitis qui itaque?</p>
+
+    <span>How many solar panels do you need?</span>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci earum eum ut ipsam, ratione ex blanditiis, esse autem voluptatem saepe explicabo pariatur architecto deleniti nemo repudiandae nesciunt delectus obcaecati. Rem?</p>
+
+
+
+    <h3>Contact Us</h3>
+
+    <form id="regForm" action="">
+
+    <div class="building">What type of building is this for ?
+        <p><input placeholder="Residential" oninput="this.className = ''"></p>
+        <p><input placeholder="Commerical" oninput="this.className = ''"></p>
+        <p><input placeholder="Other" oninput="this.className = ''"></p>
+
+      </div>
+
+
+      <div class="roof">How large is your roof?
+        <p><input placeholder="Small e.g garge/shed" oninput="this.className = ''"></p>
+        <p><input placeholder="Medium e.g terrace house" oninput="this.className = ''"></p>
+        <p><input placeholder="Large e.g detached house" oninput="this.className = ''"></p>
+        <p><input placeholder="Extra large e.g warehouse" oninput="this.className = ''"></p>
+
+
+      </div>
+
+      <div class="property">Do you own the property ?
+        <p><input placeholder="Yes" oninput="this.className = ''"></p>
+        <p><input placeholder="No" oninput="this.className = ''"></p>
+        <p><input placeholder="Other" oninput="this.className = ''"></p>
+
+        </div>
+
+
+        <div style="overflow:auto;">
+            <div style="float:right;">
+              <button type="button" id="prevBtn" onclick="nextPrev(-1)">Previous</button>
+              <button type="button" id="nextBtn" onclick="nextPrev(1)">Next</button>
+            </div>
+          </div>
+
+          <div style="text-align:center;margin-top:40px;">
+            <span class="step"></span>
+            <span class="step"></span>
+            <span class="step"></span>
+            <span class="step"></span>
+          </div>
+
+        </form>
+</body>
+</html>
