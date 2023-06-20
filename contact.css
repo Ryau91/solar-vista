@@ -1,0 +1,92 @@
+body{
+    background-color: #f2f2f2;
+    width:100vW;
+
+}
+
+.contactUsContainer {
+    width:90%;
+    margin:auto;
+    border: 2px solid red;
+    
+}
+
+.contactUsContainer .contactIntro {
+    width: 100%;
+    text-align: center;
+}
+
+.contactUsContainer .contactContent {
+    width: 100%;
+    display: flex;
+    /* align-content: center; */
+    /* border: 2px solid blue; */
+}
+
+#contactForm, .contactDetails {
+    width:50%;
+    border: 2px solid blue;
+}
+
+.formRow {
+    width: 100%;
+    /* border: 2px solid green; */
+}
+
+.formRow input {
+    width: 90%;
+    height: 1rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    padding: 1rem;
+}
+
+.formRow select{
+    /* width: 95%; */
+    /* display: block; */
+    width:100%; /* need to attend to this */
+    border: 2px solid yellow;;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    padding: 0.5rem;
+}
+
+.formRow button {
+    width:100%; /* need to attend to this */
+    height: 2rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    padding: 1rem;
+    border: 2px solid green;
+    background-color: black;
+    color: white;
+}
+
+
+.formRow.formMessage {
+    height: 10rem;
+    /* display: flex;
+    flex-direction: column; */
+    
+}
+
+.formRow.formMessage input {
+    height: 60%;
+    align-items: start;
+}
+
+.contactDetails ul{
+    border: 2px solid red;
+    display: flex;
+    flex-direction: column;
+    /* gap: 2rem; */
+    list-style-type: none;
+}
+
+.contactDetails ul li {
+    height: 1rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    padding: 1rem;
+
+}
