@@ -4,56 +4,90 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Products and Services</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
-    <div class="navbar"></div>
+
+    <section class="navbar-section">
+      <div class="navbar">   
+        <div><img class="logo" src="./Sun-Vista-Logo.svg" alt="logo"></div> 
+         <div class="menu">
+           <a href="#">Home</a>
+           <a href="#">About Us</a>
+           <a href="#">Services</a>
+           <a href="#">Testimonials</a>
+           <a href="#">News</a>
+           <a href="#">Help</a>
+         </div>
+         <a href="#">Sign in</a>
+         <button class="navbar-button">Register</button>
+     </div>
+    </section>
+    
+  
     <main>
       <div class="heading">
         <p>Our Services</p>
         <h1>We empower the transition to dependable solar energy.</h1>
       </div>
 
-      <div>
-        <div class="service-section">
-          <div class="Installation">
-            <div class="icon"><img src="./Icon-1.png" alt="Batery icon" /></div>
-            <p><strong>Solar Panel Installation</strong></p>
-            <p>
-              Our experienced team provides professional solar panel
-              installation services, including site assessment, system design,
-              and seamless integration with your electrical setup.
-            </p>
-          </div>
-
-          <div class="customizaton">
-            <div clss="icon">
-              <img src="./Icon-2.png" alt="Solar panel icon" />
-            </div>
-
-            <p><strong>Customization and Design</strong></p>
-            <p>
-              We offer customization options for solar panels, allowing you to
-              personalize their appearance and size to suit your aesthetic
-              preferences and site requirements.
-            </p>
-          </div>
-
-          <div class="maintenance">
+      <div class="service-section">
+        <div class="service-panel">
+          <div class="service-block">
             <div class="icon">
-              <img src="./Icon-3.png" alt="Maintenance icon" />
+              <img width="50" src="./Icon-1.png" alt="Batery icon" />
             </div>
 
-            <p><strong>Support and Maintenance</strong></p>
-            <p>
-              From regular check-ups and cleaning to troubleshooting assistance,
-              we offer ongoing support and ensure the longevity and performance
-              of your investment.
-            </p>
+            <div class="service-text">
+              <p><strong>Solar Panel Installation</strong></p>
+              <p>
+                Our experienced team provides professional solar panel
+                installation services, including site assessment, system design,
+                and seamless integration with your electrical setup.
+              </p>
+            </div>
+          </div>
+
+          <div class="service-block">
+            <div clss="icon">
+              <img width="50" src="./Icon-2.png" alt="Solar panel icon" />
+            </div>
+
+            <div class="service-text">
+              <p><strong>Customization and Design</strong></p>
+              <p>
+                We offer customization options for solar panels, allowing you to
+                personalize their appearance and size to suit your aesthetic
+                preferences and site requirements.
+              </p>
+            </div>
+          </div>
+
+          <div class="service-block">
+            <div class="icon">
+              <img width="50" src="./Icon-3.png" alt="Maintenance icon" />
+            </div>
+
+            <div class="service-text">
+              <p><strong>Support and Maintenance</strong></p>
+              <p>
+                From regular check-ups and cleaning to troubleshooting
+                assistance, we offer ongoing support and ensure the longevity
+                and performance of your investment.
+              </p>
+            </div>
           </div>
         </div>
 
-        <div class="service-section-img">
+        <div class="service-panel-2">
           <img
+            width="600px"
             src="https://images.unsplash.com/photo-1508514177221-188b1cf16e9d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8c29sYXIlMjBwYW5lbHxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=700&q=60"
             alt="Solar panel"
           />
@@ -67,8 +101,26 @@
             solar panel system, including regular check-ups and troubleshooting
             assistance.
           </p>
+          <p><strong>Learn more &#8594</strong></p>
         </div>
       </div>
+
+      <section class="product-section">
+        <div class="heading2">
+          <h1>Our Latest Products</h1>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus nobis ratione facilis dolores amet ad sunt laborum molestias molestiae doloremque veniam, dolorem vel recusandae doloribus necessitatibus qui sint obcaecati soluta.</p>
+          <button class="view-button">View all</button>
+        </div>
+        <div class="image-grid">
+          <div class="special1"></div>
+          <div class="special2"></div>
+          <div class="special3"></div>
+          <div class="special4"></div>
+        </div>
+      </section>
+
     </main>
+
+
   </body>
 </html>
