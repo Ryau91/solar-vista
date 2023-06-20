@@ -10,7 +10,10 @@ body {
 }
 
 main {
-    background: linear-gradient(rgb(82, 95, 225), rgb(255, 164, 27), rgb(248, 111, 3));
+    /* background: linear-gradient(rgb(82, 95, 225), rgb(255, 164, 27), rgb(248, 111, 3)); */
+    background: url(main-background-img.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .page-header-container-wrapper {
