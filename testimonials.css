@@ -6,12 +6,65 @@
 }
 
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Montserrat', sans-serif;
 }
 
+/* header as supplied by Precious Tuesday 1805 via Slack */
+
+.navbar-section {
+    margin: 0;
+    background-color: #FFFFFF;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+  }
+
+  .navbar {
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+    align-items: center;
+    /* margin: 2rem 0 1.5rem 1.5rem; */
+    padding: 20px 0 10px 0;
+    /* position: fixed;
+    top: 0;
+    left: 0; */
+    width: 100%;
+    background-color: #FFFFFF;
+  }
+
+  .navbar-button {
+    background-color: #525FE1;
+    padding: 10px 20px 10px 20px;
+    border: none;
+    border-radius: 8px;
+    font-weight: 700;
+    font-size: 1rem;
+    color: #FFFFFF;
+  }
+
+  a {
+    color: #000;
+    text-decoration: none;
+  }
+
+  a:hover {
+    color: #F86F03;
+    font-weight: bold;
+  }
+
+  .menu a {
+    margin-left: 30px;
+  }
+
+  .log-in a {
+    margin-right: 20px;
+  }
+
+/* CSS for testimonials page only */
+
 main {
-    /* background: linear-gradient(rgb(82, 95, 225), rgb(255, 164, 27), rgb(248, 111, 3)); */
-    background: url(main-background-img.jpg);
+    background: #f2f2f2;
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -24,14 +77,19 @@ main {
 
 .page-header-container {
     background: white;
+    border-radius: 10px;
     width: 1440px;
-    margin: auto;
+    margin: 20px auto;
     box-sizing: border-box;
-    padding: 40px;
+    padding: 40px 40px 40px 40px;
 }
 
 .page-header {
     margin: auto;
+}
+
+.page-header h1 {
+    color: #2F80ED;
 }
 
 .testimonials-container-wrapper {
@@ -44,6 +102,7 @@ main {
     background-color: white;
     width: 1440px;
     margin: auto;
+    border-radius: 10px;
     box-sizing: border-box;
     display: flex;  
     justify-content: space-around;
@@ -75,12 +134,17 @@ main {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+    z-index: 5;
+}
+
+.testimonials-text:hover {
+    transform: scale(1.01);
+    background: rgba(255, 255, 255, 0.91);
 }
 
 .testimonials-text a {
-    color: inherit;
     font-size: 0.9rem;
-
+    width: fit-content;
 }
 
 .item-1 {
@@ -119,8 +183,57 @@ main {
     background-position: center;
 }
 
+/* CSS for footer lifted from Robert initial commit */
+
+footer {
+    position: relative;
+    bottom: 0;
+    background-color: #F2F2F2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo-footer{
+    position: absolute;
+    left: calc(50% - 400px);
+}
+
+.social-media-icons{
+    text-align: center;
+}
+
+.fa-brands {
+    font-size: 2rem;
+    padding: 1rem;
+}
+
+.fa-brands:hover{
+    cursor: pointer;
+}
+
+footer .center{
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.copyrights{
+    padding: 1rem;
+}
+
+/* Media queries for testimonials page only */
 @media screen and (max-width: 768px) {
 .testimonials {
     width: calc(100% - 40px);
 }
 }
+
+/* bench */
+
+    /* background: linear-gradient(rgb(82, 95, 225), rgb(255, 164, 27), rgb(248, 111, 3)); */
+    /* background: url(main-background-img.jpg); */
+
+
