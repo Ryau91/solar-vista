@@ -5,13 +5,57 @@
 
 body {
     margin:0;
-    /* font-family: ; */
+    padding:0;
+    font-family: "Montserrat", sans-serif;
+    background-color: #f2f2f2;
+   
 }
 
 
+    /*Nav bar starts here */
+.navbar-section {
+    margin: 0;
+    background-color: #FFFFFF;
+   }
+   .navbar {
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+    align-items: center;
+    /* margin: 2rem 0 1.5rem 1.5rem; */
+    padding: 20px 0 10px 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #FFFFFF;
+   }
+   .navbar-button {
+    background-color: #525FE1;
+    padding: 10px 20px 10px 20px;
+    border: none;
+    border-radius: 8px;
+    font-weight: 700;
+    font-size: 1rem;  color: #FFFFFF;
+   }
+   a {
+    color: #000;
+    text-decoration: none;
+   }a:hover {
+    color: #F86F03;
+    font-weight: bold;
+   }.menu a {
+    margin-left: 30px;
+   }.log-in a {
+    margin-right: 20px;
+   }
+
+    /*Nav bar ends here */
+
+   /*main starts here */
 .container {
     width: 80%;
-    margin: 0 auto;
+    margin: 12% auto 5% auto;
 }
 
 .container-top {
@@ -30,6 +74,11 @@ body {
 }
 
 @media only screen and (max-width:576px) {
+
+    .container {
+        margin: 30% auto 2% auto;
+    }
+
     .container-bottom {
         display: flex;
         flex-wrap: wrap;
@@ -46,9 +95,9 @@ body {
 }
 
 .contact-details .formRow {
-    width: 95%;
-    height: 3rem;
-    margin: 2%;
+    width: 90%;
+    height: 3.5rem;
+    margin: 3%;
     /* font-family:  */
 }
 
@@ -59,23 +108,26 @@ body {
 .contact-details .formRow input {
     width: 100%;
     height: 100%;
+    margin: 0;
 }
 
 .contact-details .message textarea {
     width: 100%;
     height: 100%;
+    margin: 0;
     font-family: inherit;
 }
 
 .contact-details .formRow button {
     width: 100%;
     height: 100%;
+    margin:0;
     background-color: black;
     color: white;
 }
 
 .contact-details .formRow button:hover {
-    background-color:#F86F03;
+    color:#F86F03;
 }
 
 .contactMethod {
@@ -85,15 +137,16 @@ body {
 }
 
 .contactMethod .image {
-    width: 10%;
+    width: 15%;
+    margin: 0;
     background-repeat: no-repeat;
-    background-size: 90%;
+    background-size: cover;
     background-position: center;
     border: 1px solid #ccc;
   
 }
 
-.contactMethod .phoneIcon {background-image: url(/images/telephone.jpg);}
+.contactMethod .phoneIcon {background-image: url(/images/phone.jpg);}
 .contactMethod .emailIcon {background-image: url(/images/email.jpg);}
 .contactMethod .locationIcon {background-image: url(/images/location.jpg);}
 
@@ -107,12 +160,48 @@ body {
 }
 
 #acknowledgement {
-    background-color: #F86F03;
+    color: #F86F03;
     width: 100%;
     margin-top: 5%;
     text-align: center;
-    border: 1px solid #ccc;
+    /* border: 1px solid #ccc; */
     display: none; /* this message is hidden until submitting the form*/
 }
 
+/*main ends here */
 
+
+/*footer starts here */
+footer {
+    position: relative;
+    background-color: #f2f2f2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo-footer{
+    position: absolute;
+    left: calc(50% - 400px);
+    
+}
+.fa-brands {
+    font-size: 2rem;
+    padding: 1rem;
+}
+
+.fa-brands:hover{
+    cursor: pointer;
+}
+
+footer .center{
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.copyrights{
+    padding: 1rem;
+}
