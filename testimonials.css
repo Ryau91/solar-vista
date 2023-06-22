@@ -1,0 +1,239 @@
+
+/* Margins and paddings 0 by default */
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* header as supplied by Precious Tuesday 1805 via Slack */
+
+.navbar-section {
+    margin: 0;
+    background-color: #FFFFFF;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+  }
+
+  .navbar {
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+    align-items: center;
+    /* margin: 2rem 0 1.5rem 1.5rem; */
+    padding: 20px 0 10px 0;
+    /* position: fixed;
+    top: 0;
+    left: 0; */
+    width: 100%;
+    background-color: #FFFFFF;
+  }
+
+  .navbar-button {
+    background-color: #525FE1;
+    padding: 10px 20px 10px 20px;
+    border: none;
+    border-radius: 8px;
+    font-weight: 700;
+    font-size: 1rem;
+    color: #FFFFFF;
+  }
+
+  a {
+    color: #000;
+    text-decoration: none;
+  }
+
+  a:hover {
+    color: #F86F03;
+    font-weight: bold;
+  }
+
+  .menu a {
+    margin-left: 30px;
+  }
+
+  .log-in a {
+    margin-right: 20px;
+  }
+
+/* CSS for testimonials page only */
+
+main {
+    background: #f2f2f2;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.page-header-container-wrapper {
+    width: 90%;
+    margin: auto;
+    display: flex;
+}
+
+.page-header-container {
+    background: white;
+    border-radius: 10px;
+    width: 1440px;
+    margin: 20px auto;
+    box-sizing: border-box;
+    padding: 40px 40px 40px 40px;
+}
+
+.page-header {
+    margin: auto;
+}
+
+.page-header h1 {
+    color: #2F80ED;
+}
+
+.testimonials-container-wrapper {
+    width: 90%;
+    margin: auto;
+    display: flex;
+}
+
+.testimonials-container {
+    background-color: white;
+    width: 1440px;
+    margin: auto;
+    border-radius: 10px;
+    box-sizing: border-box;
+    display: flex;  
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding-top: 40px;
+    padding-right: 20px;
+    padding-left: 20px;    
+}
+
+.testimonials {
+    height: 400px;
+    width: calc(50% - 40px);
+    margin-bottom: 40px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 20px;
+}
+
+.testimonials-text {
+    background: rgba(255, 255, 255, 0.85);
+    color: black;
+    min-height: 100px;
+    max-width: 400px;
+    border-radius: 5px;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    z-index: 5;
+}
+
+.testimonials-text:hover {
+    transform: scale(1.01);
+    background: rgba(255, 255, 255, 0.91);
+}
+
+.testimonials-text a {
+    font-size: 0.9rem;
+    width: fit-content;
+}
+
+.item-1 {
+    background-image: url(https://images.unsplash.com/photo-1624397640148-949b1732bb0a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1074&q=80);
+    background-size: cover;
+    background-position: center;
+}
+
+.item-2 {
+    background-image: url(https://images.unsplash.com/photo-1509391366360-2e959784a276?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1472&q=80);
+    background-size: cover;
+    background-position: center;
+}
+
+.item-3 {
+    background-image: url(https://images.unsplash.com/photo-1611365892117-00ac5ef43c90?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80);
+    background-size: cover;
+    background-position: center;
+}
+
+.item-4 {
+    background-image: url(https://images.unsplash.com/flagged/photo-1566838634698-48b165cb0a9d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80);
+    background-size: cover;
+    background-position: center;
+}
+
+.item-5 {
+    background-image: url(https://images.unsplash.com/photo-1617269778723-73a40cf299bd?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80);
+    background-size: cover;
+    background-position: center;
+}
+
+.item-6 {
+    background-image: url(https://images.unsplash.com/photo-1561084074-7660e2c5a221?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1619&q=80);
+    background-size: cover;
+    background-position: center;
+}
+
+/* CSS for footer lifted from Robert initial commit */
+
+footer {
+    position: relative;
+    bottom: 0;
+    background-color: #F2F2F2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo-footer{
+    position: absolute;
+    left: calc(50% - 400px);
+}
+
+.social-media-icons{
+    text-align: center;
+}
+
+.fa-brands {
+    font-size: 2rem;
+    padding: 1rem;
+}
+
+.fa-brands:hover{
+    cursor: pointer;
+}
+
+footer .center{
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.copyrights{
+    padding: 1rem;
+}
+
+/* Media queries for testimonials page only */
+@media screen and (max-width: 768px) {
+.testimonials {
+    width: calc(100% - 40px);
+}
+}
+
+/* bench */
+
+    /* background: linear-gradient(rgb(82, 95, 225), rgb(255, 164, 27), rgb(248, 111, 3)); */
+    /* background: url(main-background-img.jpg); */
+
+
