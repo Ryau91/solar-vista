@@ -1,16 +1,112 @@
 .header{
     display: flex;
     justify-content: center;
-    color: #F86F03;
-    background-image: url(https://images.unsplash.com/photo-1613665813446-82a78c468a1d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=858&q=80);
- 
+    color: #2F80ED;
+   
 }
 
-.flex-container{
+.navbar-section {
+    margin: 0;
+    background-color: #FFFFFF;
+  }
+  .navbar {
     display: flex;
-    flex-direction: row;
-    background-color: #F86F03;
-    color:#FFF6F4 ;
-    width: 50%; 
+    list-style: none;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px 0 10px 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #FFFFFF;
+  }
+  .navbar-button {
+    background-color: #525FE1;
+    padding: 10px 20px 10px 20px;
+    border: none;
+    border-radius: 8px;
+    font-weight: 700;
+    font-size: 1rem;
+    color: #FFFFFF;
+  }
+  a {
+    color: #000;
+    text-decoration: none;
+  }
+  a:hover {
+    color: #F86F03;
+    font-weight: bold;
+  }
+  .menu a {
+    margin-left: 30px;
+  }
+  .log-in a {
+    margin-right: 20px;
+  }
+
+.collapsible{
+    background-color: #2f81ed80;
+    cursor: pointer;
+    color: #FFFFFF;
+    width: 100%;
+    border: 5rem;
+    text-align: center;
+    font-weight: bold;
+    font-size: 15px;
+
 }
 
+.subheader{
+    display: flex;
+    justify-content: center;
+}
+.content{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+
+.answer{
+    padding: 0 20px;
+    display: none;
+    overflow: hidden;
+    background-color: #FFFFFF;
+}
+
+.active, .collapsible:hover{
+    background-color: #F86F03;
+}
+footer {
+    position: relative;
+    bottom: 0;
+    background-color: #F2F2F2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.logo-footer{
+    position: absolute;
+    left: calc(50% - 400px);
+}
+.social-media-icons{
+    text-align: center;
+}
+.fa-brands {
+    font-size: 2rem;
+    padding: 1rem;
+}
+.fa-brands:hover{
+    cursor: pointer;
+}
+footer .center{
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.copyrights{
+    padding: 1rem;
+}
