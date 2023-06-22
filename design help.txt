@@ -1,0 +1,30 @@
+settings
+collaborators
+pub rep manage
+everyone needs to supply names
+
+back in github app:
+add, clone repository
+
+branch, new branch, use your name in branch name, create branch
+
+pages: home about products services testimonials faq
+name: solar vista
+theme: orange yellow blue
+inspiration: https://www.behance.net/gallery/150244721/Landing-Page-SunBend-Solar-Development
+font: montserrat or roboto?
+
+robert: home
+precious: services
+kieran: testimonials
+esther: faq
+khadar: about
+
+gallery cycle through images
+
+wireframe
+
+margin min and max
+background photo https://unsplash.com/photos/0GbrjL3vZF4
+
+footer
