@@ -68,9 +68,15 @@ a:hover {
 .container {
     width: 75%;
     margin: 5% auto 5% auto;
+<<<<<<< HEAD
     background-color: #f2f2f2;
     border-radius: 15px;
    
+=======
+    background-color: #FFFFFF;
+    border-radius: 1rem;
+
+>>>>>>> 22065e395e456de14a94595b4a133c4d9a7674ff
 }
 
 .container-top {
