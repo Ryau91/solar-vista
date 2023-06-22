@@ -1,10 +1,19 @@
+.body{
+    display: flexbox;
+    position: relative;
+    top: 70px;
+    justify-content: center;
+    
+    
+}
+
 .header{
     display: flex;
     justify-content: center;
     color: #2F80ED;
    
 }
-
+ 
 .navbar-section {
     margin: 0;
     background-color: #FFFFFF;
