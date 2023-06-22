@@ -69,7 +69,10 @@ a:hover {
 
 .container-top {
     text-align: center;
+}
 
+.container-top h1 {
+    padding: 2%;
 }
 .container-bottom {
     width: 100%;
