@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frequently Asked Questions</title>
+    <link rel="stylesheet" href="faq.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+
+  <section class="navbar-section">
+    <div class="navbar">
+      <div><img class="logo" src="./Sun-Vista-Logo-3.svg" alt="logo"></div>
+       <div class="menu">
+         <a href="#">Home</a>
+         <a href="#">About Us</a>
+         <a href="#">Services</a>
+         <a href="#">Testimonials</a>
+         <a href="#">News</a>
+         <a href="#">Help</a>
+       </div>
+       <div class="log-in">
+         <a href="#">Sign in</a>
+         <button class="navbar-button">Register</button>
+       </div>
+   </div>
+  </section>
+
+
+<div class="body">
+    <h1 class="header"> Frequently Asked Questions</h1>
+    <p class = "subheader"> Find answers to our most frequently asked questions below. If you cannot find what you're looking for please contact us and we'll get in touch within 24hours. </p>
+
+<div class="content">
+
+<button type="button" class="collapsible">Can your roof support a solar panel system?</button>
+<div class="answer"> 
+      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aut natus itaque quam odio impedit facilis saepe non corrupti qui similique doloribus fuga, voluptatibus hic adipisci quaerat ipsam suscipit maiores mollitia?</p>
+    </div>
+    
+    <button type="button" class="collapsible">Do you need a license for solar panel installation?</button>
+     
+    <div class="answer">
+     <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aut adipisci blanditiis esse maiores laudantium est qui impedit ipsum voluptatem architecto. Repellat earum iste numquam ratione quisquam eveniet facilis magnam vitae.</p> 
+    </div>
+   
+    <button type="button" class="collapsible">Do you need a solar backup?</button>
+   <div class="answer">
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui doloribus dolorum similique provident amet natus voluptatem dolores assumenda recusandae nostrum fugiat minima nisi quo rem, facilis ipsam. Odio, quidem natus.</p>
+</div>
+    
+    <button type="button" class="collapsible">How long will the solar panel last?</button>
+    <div class="answer">
+<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Commodi enim eaque minus sint? Saepe fuga voluptas, ducimus soluta velit assumenda numquam alias, architecto commodi maiores consequatur eius ut. Suscipit, dolorum.</p>
+    </div>
+    
+    <button type="button" class="collapsible"> What is the warranty?</button>
+    <div class="answer"> 
+<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illum sapiente sunt numquam eveniet consequuntur reiciendis sit cupiditate dignissimos maiores! Adipisci fugit corrupti voluptate accusantium magnam dicta possimus pariatur illum nulla.</p>
+    </div>
+
+    <button type="button" class="collapsible">How many solar panels do you need?</button>
+    <div class="answer">
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus, magni facilis. Cupiditate amet corrupti consequuntur quo. Culpa error, maiores sint molestias magni, accusamus in, possimus repellat eum et rem laborum.</p>
+
+    </div>
+
+</div>
+
+
+    <footer>
+      <img class="logo logo-footer" src="assets/images/Sun-Vista-Logo-3.svg" alt="solar vista logo">
+      <div class="center">
+          <div class="social-media-icons">
+              <i class="fa-brands fa-facebook"></i>
+              <i class="fa-brands fa-twitter"></i>
+              <i class="fa-brands fa-instagram"></i>
+              <i class="fa-brands fa-linkedin"></i>
+              <i class="fa-brands fa-youtube"></i>
+          </div>
+          <div class="fake-address">13 Station Rd, Knebworth, Hertfordshire, SG3 6AP</div>
+          <div class="copyrights">© 2023 Solar Vista Ltd. All rights reserved.</div>
+      </div>
+  </footer>
+
+</div>
+
+ <script>
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.display === "block") {
+      content.style.display = "none";
+    } else {
+      content.style.display = "block";
+    }
+  });
+}
+</script>
+</body>
+</html> 
