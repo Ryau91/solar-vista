@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap"
+    rel="stylesheet"
+  />
+    <link rel="stylesheet" href="contact.css">
+</head>
+<body>
+    <!-- Nav bar -->
+        <section class="navbar-section">
+            <div class="navbar">
+              <div><img class="logo" src="./Sun-Vista-Logo-3.svg" alt="logo"></div>
+               <div class="menu">
+                <a href="index.html">Home</a>
+                <a href="#">About Us</a>
+                <a href="services.html">Services</a>
+                <a href="testimonials.html">Projects</a>
+                <a href="faq.html">Help</a>
+                <a href="contact.html">Contact</a>
+               </div>
+               <div class="log-in">
+                 <a href="#">Sign in</a>
+                 <button class="navbar-button">Register</button>
+               </div>
+           </div>
+        </section>
+    
+    <!-- Main part -->
+    <main class="container">
+        <div class="container-top">
+            <h1> Contact Us</h1>
+            <p>Whether you are curious about the features, an existing customer looking for help, or inquiring a partnership, please get in touch by either completing the form below or directly contacting our team of experts. <br> We are ready to answer any and all questions. </p>
+        </div>
+        <div class="container-bottom">
+            <div class="container-bottom-left contact-details">
+                <form id="form" name="contactForm">
+                    <div class="formRow name">
+                        <input type="text" id="formName" placeholder="Name*" required>
+                    </div>
+                    <div class="formRow email">
+                        <input type="email" id="formEmail" placeholder="Email*" required>
+                    </div>
+                    <div class="formRow phoneNumber">
+                        <input type="number" id="formNumber" placeholder="Mobile Number">
+                    </div>
+                    <div class="formRow message">
+                        <textarea id="formMessage" placeholder="Message" maxlength="250" required></textarea>
+                    </div>
+                    <div class="formRow formbutton">
+                        <button id="formSubmit" type="submit">Send Message</button>
+                    </div>
+                </form>                
+            </div>
+            <div class="container-bottom-right contact-details">
+                <div class="formRow contactMethod phoneNumber">
+                    <div class="image phoneIcon"></div>
+                    <p><span class="mainText">Phone</span><br><span>+44 xxxxxxxxxx</span></p>
+                </div>
+                <div class="formRow contactMethod emailAddress">
+                    
+                    <div class="image emailIcon"> </div>
+                    <p><span class="mainText">Email</span><br><span>xxx@gmail.com</span></p>
+                </div>
+                <div class="formRow contactMethod Address">
+                    <div class="image locationIcon"></div>
+                    <p><span class="mainText">Address</span><br><span>13 Station Rd, Knebworth, Hertfordshire, SG3 6AP</span></p>
+
+                </div>
+            </div>
+        </div>
+
+        <div id="acknowledgement">
+            <p>Thank you for contacting us! <br>One of our team members will be in touch with you shortly.</p>
+        </div>
+    </main>
+
+    <!-- Footer part -->
+    <footer>
+        <img class="logo logo-footer" src="assets/images/Sun-Vista-Logo-3.svg" alt="solar vista logo">
+        <div class="center">
+            <div class="social-media-icons">
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-linkedin"></i>
+                <i class="fa-brands fa-youtube"></i>
+            </div>
+            <div class="fake-address">13 Station Rd, Knebworth, Hertfordshire, SG3 6AP</div>
+            <div class="copyrights">© 2023 Solar Vista Ltd. All rights reserved.</div>
+        </div>
+    </footer>
+
+    <script>
+        const form = document.getElementById('form');
+        let formValue = document.getElementsByName('contactForm')[0];
+        form.onsubmit=function(event){
+            event.preventDefault();
+            console.log('working')
+            document.getElementById('acknowledgement').style.display = "block"; //for showing the message after submitting the form
+            formValue.reset(); //This resets the form data on submit
+        }
+
+    </script>
+        
+</body>
+</html>

@@ -5,40 +5,90 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <title>Test</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <script src="script.js" defer></script>
+    <title>Solar Vista</title>
 </head>
 <body>
-    <img class="logo logo-header" src="assets/images/Sun-Vista-Logo-3.svg" alt="solar vista logo">
-    <navbar class="menu">
-        <ul>
-            <li>Home</li>
-            <li>About Us</li>
-            <li>Services</li>
-            <li>Testimonials</li>
-            <li>News</li>
-            <li>Help</li>
-        </ul>
-    </navbar>
-    <div>
-        <div>Register</div>
-        <div>Log in</div>
-    </div>
+    <section class="navbar-section">
+        <div class="navbar">
+          <div><img class="logo logo-header" src="assets/images/Sun-Vista-Logo-3.svg" alt="solar vista logo"></div>
+           <div class="menu">
+             <a href="index.html">Home</a>
+             <a href="about.html">About Us</a>
+             <a href="services.html">Services</a>
+             <a href="testimonials.html">Projects</a>
+             <a href="faq.html">Help</a>
+             <a href="contact.html">Contact</a>
+           </div>
+           <div class="log-in">
+             <a href="#">Sign in</a>
+             <button class="navbar-button">Register</button>
+           </div>
+       </div>
+    </section>
     <main>
-        <!-- <div class="whatever">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Distinctio quo nobis voluptatem cum officia? Commodi quam magnam dolorum reiciendis, aspernatur eveniet, quasi dignissimos, facilis alias eos porro rerum laudantium voluptas omnis. Velit sequi aperiam reprehenderit doloribus ullam id ipsam, nobis eveniet architecto tenetur, rem tempora aliquid, eligendi quidem placeat neque odio eius. Dolor labore fuga voluptatibus, velit quidem ipsam odio numquam iste deserunt rem repudiandae, iusto porro laborum sed repellat, minima ipsa vitae asperiores! Est vitae nemo nulla nihil et, officia, molestiae odio animi, quasi voluptatem perferendis quas at. Excepturi tenetur rerum consequuntur repellendus eum quasi voluptas temporibus natus solut.</div> -->
+        <header>
+            <div class="header-container">
+                <div class="headline">
+                    <h1>
+                    Experience Limitless Energy Potential with <span>Solar Vista.</span> Illuminate Your World with Clean Power.
+                    </h1>
+                    <h2>Unlock the Future of Sustainable Living and Embrace Solar Energy Solutions Today.</h2>
+                </div>
+                <div class="headline-buttons">
+                    <button class="scroll-button-1">Learn more</button>
+                    <button>Book a call</button>
+                </div> 
+            </div>
+
+        </header>
+        <section class="why-solar-container why-solar-container-1">
+            <div class="why-solar why-solar-1">
+                <article>
+                    <h1>Why Solar Power?</h1>
+                    <p><span>Cost Savings:</span> Solar power can significantly reduce or even eliminate electricity bills. By generating your own clean energy, you become less dependent on utility companies and their fluctuating rates. Over time, solar panels can provide substantial savings on energy costs, allowing homeowners to allocate their money elsewhere.</p>
+                    <button class="scroll-button-2">Continue</button>
+                </article>
+                <div class="image-container">
+                    <img src="assets/images/solar-panel-home.jpg" alt="">
+                </div>
+            </div>
+        </section>
+        <section class="why-solar-container why-solar-container-2">
+            <div class="why-solar why-solar-2">
+                <article>
+                    <p><span>Environmental Benefits:</span> Solar energy is a clean and renewable energy source. By switching to solar power, individuals can significantly reduce their carbon footprint, help combat climate change, and contribute to a cleaner and healthier planet. It's an impactful way to take action and promote sustainability.</p>
+                    <button class="scroll-button-2">Continue</button>
+                </article>
+                <div class="image-container">
+                    <img src="assets/images/clean-energy.jpg" alt="">
+                </div>
+            </div>
+        </section>
     </main>
+
+
     <footer>
         <img class="logo logo-footer" src="assets/images/Sun-Vista-Logo-3.svg" alt="solar vista logo">
         <div class="center">
-            <ul class="social-media-icons">
-                <li><i class="fa-brands fa-facebook"></i></li>
-                <li><i class="fa-brands fa-twitter"></i></li>
-                <li><i class="fa-brands fa-instagram"></i></li>
-                <li><i class="fa-brands fa-linkedin"></i></li>
-                <li><i class="fa-brands fa-youtube"></i></li>
-            </ul>
+            <div class="social-media-icons">
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-linkedin"></i>
+                <i class="fa-brands fa-youtube"></i>
+            </div>
             <div class="fake-address">13 Station Rd, Knebworth, Hertfordshire, SG3 6AP</div>
             <div class="copyrights">© 2023 Solar Vista Ltd. All rights reserved.</div>
         </div>
     </footer>
 </body>
 </html>
+
+<!-- cookies? -->

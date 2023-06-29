@@ -1,0 +1,239 @@
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+    /* border: 1px solid; */
+}
+
+body {
+    width: 100vw;
+    /* height: 100vh; */
+    font-family: "Montserrat", sans-serif;
+    /* background-color: #f2f2f2; */
+    background-image: url(assets/images/main-background.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+    /*Nav bar starts here */
+/* .navbar-section {
+    margin: 0;
+    background-color: #FFFFFF;
+    position: sticky;
+    top: 0;
+   } */
+.navbar {
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+    align-items: center;
+    /* margin: 2rem 0 1.5rem 1.5rem; */
+    padding: 20px 0 10px 0;
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #FFFFFF;
+   }
+
+.navbar-button {
+    background-color: #525FE1;
+    padding: 10px 20px 10px 20px;
+    border: none;
+    border-radius: 8px;
+    font-weight: 700;
+    font-size: 1rem;  color: #FFFFFF;
+   }
+
+a {
+    color: #000;
+    text-decoration: none;
+}
+a:hover {
+    color: #F86F03;
+    font-weight: bold;
+   }
+.menu a {
+    margin-left: 30px;
+   }
+.log-in a {
+    margin-right: 20px;
+   }
+
+    /*Nav bar ends here */
+
+   /*main starts here */
+.container {
+    width: 75%;
+    margin: 5% auto 5% auto;
+    background-color: #f2f2f2;
+    border-radius: 15px;
+   
+}
+
+.container-top {
+    text-align: center;
+
+    background-color: #FFFFFF;
+    border-radius: 15px;
+    padding: 5%;
+}
+
+.container-top h1 {
+    padding: 2%;
+}
+.container-bottom {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 5% 0 2% 0;
+}
+
+.contact-details {
+    width:50%;
+}
+
+@media only screen and (max-width:576px) {
+
+    .container {
+        margin: 10% auto 10% auto;
+    }
+
+    .container-bottom {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        /* margin: 5% 0 20% 0; */
+    }
+
+    .contact-details {
+        width:100%;
+    }
+}
+
+.contact-details form {
+    width: 95%;
+}
+
+.contact-details .formRow {
+    width: 90%;
+    height: 3.5rem;
+    margin: 3%;
+    /* font-family:  */
+}
+
+.contact-details .message {
+    height: 6rem;
+}
+
+.contact-details .formRow input {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    font-family: inherit;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.contact-details .message textarea {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    font-family: inherit;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.contact-details .formRow button {
+    width: 100%;
+    height: 100%;
+    margin:0;
+    background-color: black;
+    color: white;
+    font-family: inherit;
+    border-radius: 15px;
+    border: 1px solid #ccc;
+}
+
+.contact-details .formRow button:hover {
+    color:#F86F03;
+}
+
+.contactMethod {
+    display: flex;
+    gap: 1rem;
+    
+}
+
+.contactMethod .image {
+    width: 10%;
+    margin: 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  
+}
+
+.contactMethod .phoneIcon {background-image: url(assets/images/telephone.jpg);}
+.contactMethod .emailIcon {background-image: url(assets/images/email.jpg);}
+.contactMethod .locationIcon {background-image: url(assets/images/location.jpg);}
+
+.contactMethod p {
+    margin: 0;
+    width: 90%;
+}
+
+.contactMethod p span.mainText {
+    font-size: 125%;
+}
+
+#acknowledgement {
+    color: #F86F03;
+    width: 100%;
+    padding: 5%;
+    text-align: center;
+    /* border: 1px solid #ccc; */
+    display: none; /* this message is hidden until submitting the form*/
+}
+
+/*main ends here */
+
+
+/*footer starts here */
+footer {
+    position: relative;
+    bottom: 0;
+    background-color: #F2F2F2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 0.5px solid #ccc;
+}
+.logo-footer{
+    position: absolute;
+    left: calc(50% - 400px);
+}
+.social-media-icons{
+    text-align: center;
+}
+.fa-brands {
+    font-size: 2rem;
+    padding: 1rem;
+}
+.fa-brands:hover{
+    cursor: pointer;
+}
+footer .center{
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.copyrights{
+    padding: 1rem;
+}
