@@ -4,7 +4,7 @@
     animation: myrotation 10s infinite linear;
 }
 
-/* @keyframes myrotation {
+/*@keyframes myrotation {
 0%   {transform: rotate(0deg);}
 100% {transform: rotate(360deg);}
 } */
@@ -196,6 +196,7 @@ main {
     width: 100%;
     background-color: #FFFFFF;
   }
+  
   .navbar-button {
     background-color: #525FE1;
     padding: 10px 20px 10px 20px;
@@ -234,7 +235,7 @@ footer {
 .logo-footer{
     position: absolute;
     left: calc(50% - 400px);
-    
+       
 }
 
 .social-media-icons{

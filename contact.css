@@ -1,29 +1,38 @@
 *{
     box-sizing: border-box;
-    margin:0;
-    padding:0;
-    /* border: 1px solid; */
+}
+
+html {
+    /* position: relative; */
+    /* height:auto; */
 }
 
 body {
-    width: 100vw;
-    /* height: 100vh; */
-    font-family: "Montserrat", sans-serif;
-    /* background-color: #f2f2f2; */
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    /* position: relative; */
+    font-family: "Montserrat", sans-serif;   
     background-image: url(assets/images/main-background.jpg);
+    background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    background-repeat: no-repeat;
+    background-attachment: fixed; 
+    
 }
 
 
     /*Nav bar starts here */
-/* .navbar-section {
+.navbar-section {
     margin: 0;
     background-color: #FFFFFF;
-    position: sticky;
+    position: fixed;
     top: 0;
-   } */
+    z-index: 1;
+    width: 100%;
+    border-bottom: 0.5px solid #ccc;
+}
+
 .navbar {
     display: flex;
     list-style: none;
@@ -31,9 +40,9 @@ body {
     align-items: center;
     /* margin: 2rem 0 1.5rem 1.5rem; */
     padding: 20px 0 10px 0;
-    position: sticky;
-    top: 0;
-    left: 0;
+    /* position: fixed;
+    top: 0; */
+    /* left: 0; */
     width: 100%;
     background-color: #FFFFFF;
    }
@@ -64,71 +73,80 @@ a:hover {
 
     /*Nav bar ends here */
 
+
    /*main starts here */
-.container {
+
+main {
+    width: 100%;
+    position: relative;
+    top: 1rem;
+    /* display: flex; */
+}
+
+div.container {
     width: 75%;
-    margin: 5% auto 5% auto;
+    height: 100%;
+    margin: 10% auto 10% auto;
     background-color: #f2f2f2;
-    border-radius: 15px;
-   
+    border-radius: 40px;  
+    /* border: 1px solid red;     */
 }
 
 .container-top {
     text-align: center;
-
     background-color: #FFFFFF;
-    border-radius: 15px;
+    border-radius: 40px;
     padding: 5%;
+    margin: 0;
 }
 
-.container-top h1 {
-    padding: 2%;
-}
 .container-bottom {
     width: 100%;
     display: flex;
     flex-wrap: wrap;
-    margin: 5% 0 2% 0;
+    margin: 0;
+    padding: 2%;
 }
 
-.contact-details {
+.container-half {
     width:50%;
 }
 
 @media only screen and (max-width:576px) {
 
-    .container {
-        margin: 10% auto 10% auto;
+    div.container {
+        margin: 20% auto;
+        border-radius: 30px;
     }
 
     .container-bottom {
         display: flex;
         flex-wrap: wrap;
         flex-direction: column;
-        /* margin: 5% 0 20% 0; */
+        padding-bottom: 10%;
     }
 
-    .contact-details {
+    .container-half {
         width:100%;
     }
 }
 
-.contact-details form {
+.container-half form {
     width: 95%;
+    margin: 0;
 }
 
-.contact-details .formRow {
+.container-half .formRow {
     width: 90%;
     height: 3.5rem;
     margin: 3%;
-    /* font-family:  */
 }
 
-.contact-details .message {
+.container-half .message {
     height: 6rem;
 }
 
-.contact-details .formRow input {
+.container-half .formRow input {
     width: 100%;
     height: 100%;
     margin: 0;
@@ -137,7 +155,7 @@ a:hover {
     border: 1px solid #ccc;
 }
 
-.contact-details .message textarea {
+.container-half .message textarea {
     width: 100%;
     height: 100%;
     margin: 0;
@@ -146,18 +164,18 @@ a:hover {
     border: 1px solid #ccc;
 }
 
-.contact-details .formRow button {
+.container-half .formRow button {
     width: 100%;
     height: 100%;
     margin:0;
     background-color: black;
     color: white;
     font-family: inherit;
-    border-radius: 15px;
+    border-radius: 35px;
     border: 1px solid #ccc;
 }
 
-.contact-details .formRow button:hover {
+.container-half .formRow button:hover {
     color:#F86F03;
 }
 
@@ -169,6 +187,7 @@ a:hover {
 
 .contactMethod .image {
     width: 10%;
+    height: 100%;
     margin: 0;
     background-repeat: no-repeat;
     background-size: cover;
@@ -185,10 +204,12 @@ a:hover {
 .contactMethod p {
     margin: 0;
     width: 90%;
+    height: 100%;
 }
 
 .contactMethod p span.mainText {
     font-size: 125%;
+    margin: 0;
 }
 
 #acknowledgement {
@@ -205,14 +226,15 @@ a:hover {
 
 /*footer starts here */
 footer {
-    position: relative;
-    bottom: 0;
+    /* position: absolute;
+    bottom: 0; */
+    width: 100%;
     background-color: #F2F2F2;
     display: flex;
     align-items: center;
     justify-content: center;
-    border: 0.5px solid #ccc;
-}
+    border-top: 0.5px solid #ccc;
+} 
 .logo-footer{
     position: absolute;
     left: calc(50% - 400px);
